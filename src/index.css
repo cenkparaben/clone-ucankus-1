@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* Global font değişkenleri tanımlıyoruz */
+:root {
+    --content-font: "Ubuntu", sans-serif;
+    --header-font: "Roboto", sans-serif;
+}
+
+/* Header için özel sınıf */
+.header {
+    font-family: var(--header-font);
+}
+
+/* İçerik (content) için özel sınıf */
+.content {
+    font-family: var(--content-font);
+}
