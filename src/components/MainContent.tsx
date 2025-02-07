@@ -65,7 +65,7 @@ export const MainContent: React.FC = () => {
                 <div className="flex flex-col gap-8">
                     {/* Üst Bilgi Bölümü */}
                     <div className="text-center">
-                        <h2 className="text-2xl font-medium text-slate-400 tracking-widest mb-4">BAYKAR TEKNOLOJİLERİ</h2>
+                        <h2 className="text-xl font-medium text-slate-400 tracking-widest mb-4">BAYKAR TEKNOLOJİLERİ</h2>
                         <p className="text-4xl font-bold text-slate-100 leading-tight mb-4">
                             9.000 lira yatırım yapın ve <span className="text-orange-400">Baykar Teknolojileri</span> hisselerine sahip olun.
                         </p>
