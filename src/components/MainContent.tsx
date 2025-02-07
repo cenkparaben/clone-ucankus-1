@@ -65,17 +65,17 @@ export const MainContent: React.FC = () => {
                 <div className="flex flex-col gap-8">
                     {/* Üst Bilgi Bölümü */}
                     <div className="text-center">
-                        <h2 className="text-2xl font-medium text-slate-400 tracking-widest mb-4">BAYKAR TEKNOLOJİLERİ</h2>
-                        <p className="text-4xl font-bold text-slate-200 leading-tight mb-4">
+                        <h2 className="text-lg font-medium text-slate-400 tracking-widest mb-4">BAYKAR TEKNOLOJİLERİ</h2>
+                        <p className="text-4xl font-bold text-slate-100 leading-tight mb-4">
                             9.000 lira yatırım yapın ve <span className="text-orange-400">Baykar Teknolojileri</span> hisselerine sahip olun.
                         </p>
-                        <p className="text-lg text-gray-500 mb-2">
+                        <p className="text-lg text-gray-200 mb-2">
                             Yatırıma katılmak için, minumum yatırıma müsait 7.000 TL’ye sahip olmanız gerekmektedir.
                         </p>
                     </div>
 
                     {/* Resim Galerisi: Yatay kaydırılabilir */}
-                    <div className="flex gap-4 overflow-x-auto pb-2">
+                    <div className="flex gap-4 overflow-x-auto">
                         <img src={bayraktar} alt="Bayraktar" className="w-40 flex-shrink-0 object-contain" />
                         <img src={bayraktar2} alt="Kızıl Elma" className="w-40 flex-shrink-0 object-contain" />
                         <img src={bayraktar3} alt="Hava Aracı" className="w-40 flex-shrink-0 object-contain" />
@@ -83,19 +83,20 @@ export const MainContent: React.FC = () => {
 
                     {/* Açıklama ve Buton */}
                     <div className="px-2 text-center">
-                        <p className="text-base text-gray-500 mb-2">
-                            Türkiye'nin önde gelen savunma şirketlerinden biri olan BAYKAR, sürekli olarak yeni ve yenilikçi teknolojilere yatırım
-                            yapmaktadır.
-                        </p>
-                        <p className="text-sm text-gray-400 mb-4">
-                            Drone'lar artık sizin yatırımınızla daha güçlü ve gelir getiren bir model haline geliyor.
-                        </p>
                         <button
                             onClick={scrollToForm}
-                            className="mt-4 px-6 py-3  bg-orange-400 text-white rounded-md hover:bg-blue-700 transition-colors"
+                            className="px-6 py-3 mb-4 bg-orange-400 text-white rounded-md hover:bg-blue-700 transition-colors"
                         >
                             Daha Fazla Bilgi İçin Form Doldurun
                         </button>
+                        <p className="text-base text-gray-200 mb-2">
+                            Türkiye'nin önde gelen savunma şirketlerinden biri olan BAYKAR, sürekli olarak yeni ve yenilikçi teknolojilere yatırım
+                            yapmaktadır.
+                        </p>
+                        <p className="text-sm text-gray-200 mb-2">
+                            Drone'lar artık sizin yatırımınızla daha güçlü ve gelir getiren bir model haline geliyor.
+                        </p>
+                        
                     </div>
 
                     {/* Form Bölümü */}
@@ -181,17 +182,17 @@ export const MainContent: React.FC = () => {
                             <p className="sm:text-lg text-base text-gray-500 mb-2">
                                 Yatırıma katılmak için, minumum yatırıma müsait 7.000 TL sahip olmanız gerekmektedir.
                             </p>
-                            <p className="text-sm text-gray-400 mb-4">
-                                Türkiye'nin önde gelen savunma şirketlerinden biri olarak BAYKAR, sürekli olarak yeni ve yenilikçi teknolojilere
-                                yatırım yapmayı misyon olarak görmekteyiz. Drone (insansız hava araçları) artık sizin yatırımınızla daha güçlü ve
-                                gelir getiren bir model haline geliyor.
-                            </p>
-                            <button
+                             <button
                                 onClick={scrollToForm}
                                 className="mt-4 px-8 py-3 bg-gray-200 text-slate-700 rounded-md hover:bg-slate-700 hover:text-gray-200 transition-colors"
                             >
                                 Daha Fazla Bilgi Almak İçin Form Doldurun
                             </button>
+                            <p className="text-sm text-gray-400 mb-4">
+                                Türkiye'nin önde gelen savunma şirketlerinden biri olarak BAYKAR, sürekli olarak yeni ve yenilikçi teknolojilere
+                                yatırım yapmayı misyon olarak görmekteyiz. Drone (insansız hava araçları) artık sizin yatırımınızla daha güçlü ve
+                                gelir getiren bir model haline geliyor.
+                            </p>
                         </div>
 
                         {/* Sağ Kısım: Form */}
