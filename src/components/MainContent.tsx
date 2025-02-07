@@ -83,6 +83,12 @@ export const MainContent: React.FC = () => {
 
                     {/* Açıklama ve Buton */}
                     <div className="px-2 text-center">
+                        <button
+                            onClick={scrollToForm}
+                            className="mt-4 px-6 py-3  bg-orange-400 text-white rounded-md hover:bg-blue-700 transition-colors"
+                        >
+                            Daha Fazla Bilgi İçin Form Doldurun
+                        </button>
                         <p className="text-base text-gray-200 mb-2">
                             Türkiye'nin önde gelen savunma şirketlerinden biri olan BAYKAR, sürekli olarak yeni ve yenilikçi teknolojilere yatırım
                             yapmaktadır.
@@ -90,12 +96,7 @@ export const MainContent: React.FC = () => {
                         <p className="text-sm text-gray-200 mb-2">
                             Drone'lar artık sizin yatırımınızla daha güçlü ve gelir getiren bir model haline geliyor.
                         </p>
-                        <button
-                            onClick={scrollToForm}
-                            className="mt-4 px-6 py-3  bg-orange-400 text-white rounded-md hover:bg-blue-700 transition-colors"
-                        >
-                            Daha Fazla Bilgi İçin Form Doldurun
-                        </button>
+                        
                     </div>
 
                     {/* Form Bölümü */}
