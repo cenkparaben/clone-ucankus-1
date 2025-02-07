@@ -181,17 +181,17 @@ export const MainContent: React.FC = () => {
                             <p className="sm:text-lg text-base text-gray-500 mb-2">
                                 Yatırıma katılmak için, minumum yatırıma müsait 7.000 TL sahip olmanız gerekmektedir.
                             </p>
-                            <p className="text-sm text-gray-400 mb-4">
-                                Türkiye'nin önde gelen savunma şirketlerinden biri olarak BAYKAR, sürekli olarak yeni ve yenilikçi teknolojilere
-                                yatırım yapmayı misyon olarak görmekteyiz. Drone (insansız hava araçları) artık sizin yatırımınızla daha güçlü ve
-                                gelir getiren bir model haline geliyor.
-                            </p>
-                            <button
+                             <button
                                 onClick={scrollToForm}
                                 className="mt-4 px-8 py-3 bg-gray-200 text-slate-700 rounded-md hover:bg-slate-700 hover:text-gray-200 transition-colors"
                             >
                                 Daha Fazla Bilgi Almak İçin Form Doldurun
                             </button>
+                            <p className="text-sm text-gray-400 mb-4">
+                                Türkiye'nin önde gelen savunma şirketlerinden biri olarak BAYKAR, sürekli olarak yeni ve yenilikçi teknolojilere
+                                yatırım yapmayı misyon olarak görmekteyiz. Drone (insansız hava araçları) artık sizin yatırımınızla daha güçlü ve
+                                gelir getiren bir model haline geliyor.
+                            </p>
                         </div>
 
                         {/* Sağ Kısım: Form */}
