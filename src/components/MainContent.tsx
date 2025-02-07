@@ -85,7 +85,7 @@ export const MainContent: React.FC = () => {
                     <div className="px-2 text-center">
                         <button
                             onClick={scrollToForm}
-                            className="mt-4 px-6 py-3  bg-orange-400 text-white rounded-md hover:bg-blue-700 transition-colors"
+                            className="px-6 py-3  bg-orange-400 text-white rounded-md hover:bg-blue-700 transition-colors"
                         >
                             Daha Fazla Bilgi İçin Form Doldurun
                         </button>
