@@ -2,6 +2,7 @@ import React, { useState, useCallback } from "react";
 import bayraktar from "../../public/bayraktar.png";
 import bayraktar2 from "../../public/kizilelma.png";
 import bayraktar3 from "../../public/havaaraci.png";
+import ReactPixel from 'react-facebook-pixel';
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyOPxDyunv7RuV7NBHhTcnOLYdR-j7GeI6YIZypniroqRKGqYZ0jM-RoeGli57eywXXug/exec";
 
@@ -57,6 +58,10 @@ export const MainContent: React.FC = () => {
             formElement.scrollIntoView({ behavior: "smooth" });
         }
     };
+
+    const handleRegistrationComplete = () => {
+    ReactPixel.track('CompleteRegistration');
+  };
 
     return (
         <section className="container mx-auto px-4 py-12">
@@ -247,6 +252,7 @@ export const MainContent: React.FC = () => {
                                 </div>
                                 <button
                                     type="submit"
+                                    onClick={handleRegistrationComplete}
                                     disabled={loading}
                                     className="w-full bg-orange-400 text-white py-3 rounded-md hover:bg-orange-500 transition-colors disabled:opacity-50"
                                 >
