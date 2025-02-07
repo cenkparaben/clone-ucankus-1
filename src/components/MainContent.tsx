@@ -66,16 +66,16 @@ export const MainContent: React.FC = () => {
                     {/* Üst Bilgi Bölümü */}
                     <div className="text-center">
                         <h2 className="text-2xl font-medium text-slate-400 tracking-widest mb-4">BAYKAR TEKNOLOJİLERİ</h2>
-                        <p className="text-4xl font-bold text-slate-200 leading-tight mb-4">
+                        <p className="text-4xl font-bold text-slate-100 leading-tight mb-4">
                             9.000 lira yatırım yapın ve <span className="text-orange-400">Baykar Teknolojileri</span> hisselerine sahip olun.
                         </p>
-                        <p className="text-lg text-gray-500 mb-2">
+                        <p className="text-lg text-gray-200 mb-2">
                             Yatırıma katılmak için, minumum yatırıma müsait 7.000 TL’ye sahip olmanız gerekmektedir.
                         </p>
                     </div>
 
                     {/* Resim Galerisi: Yatay kaydırılabilir */}
-                    <div className="flex gap-4 overflow-x-auto pb-2">
+                    <div className="flex gap-4 overflow-x-auto">
                         <img src={bayraktar} alt="Bayraktar" className="w-40 flex-shrink-0 object-contain" />
                         <img src={bayraktar2} alt="Kızıl Elma" className="w-40 flex-shrink-0 object-contain" />
                         <img src={bayraktar3} alt="Hava Aracı" className="w-40 flex-shrink-0 object-contain" />
@@ -83,11 +83,11 @@ export const MainContent: React.FC = () => {
 
                     {/* Açıklama ve Buton */}
                     <div className="px-2 text-center">
-                        <p className="text-base text-gray-500 mb-2">
+                        <p className="text-base text-gray-200 mb-2">
                             Türkiye'nin önde gelen savunma şirketlerinden biri olan BAYKAR, sürekli olarak yeni ve yenilikçi teknolojilere yatırım
                             yapmaktadır.
                         </p>
-                        <p className="text-sm text-gray-400 mb-4">
+                        <p className="text-sm text-gray-200 mb-2">
                             Drone'lar artık sizin yatırımınızla daha güçlü ve gelir getiren bir model haline geliyor.
                         </p>
                         <button
